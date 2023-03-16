@@ -6,20 +6,20 @@ to install this module visit the npm page of [@spookyhub/validate](https://www.n
 
 ## Functions
 - `validate.emailList(input)` to validate a list of emails seperated by a coma ,
-  - `email@domain.com` true
-  - `email@domain.com,` true
-  - `email@domain.com, ` true
-  - `email@domain.com, email@domain.com, email@domain.com, ` true
-  - `email@domain.com ` false
-  - `email@domain.com. email@domain.com.,` false
+  - `email@domain.com` <span style="color:green">true</span>
+  - `email@domain.com,` <span style="color:green">true</span>
+  - `email@domain.com, ` <span style="color:green">true</span>
+  - `email@domain.com, email@domain.com, email@domain.com, ` <span style="color:green">true</span>
+  - `email@domain.com ` <span style="color:red">false</span>
+  - `email@domain.com. email@domain.com.,` <span style="color:red">false</span>
   
 - `validate.email(input)` to validate an email
-  - `email@domain.com` true
-  - `email.test.com` false
+  - `email@domain.com` <span style="color:green">true</span>
+  - `email.test.com` <span style="color:red">false</span>
   
 - `validate.password(input)` to check if a password is bigger than 8, contains at least 1 capital letter and 1 digit
-  - `Password123` true
-  - `password123` false
-  - `pass` false
-  - `Pass` false
-  - `pass123123` false
+  - `Password123` <span style="color:green">true</span>
+  - `password123` <span style="color:red">false</span>
+  - `pass` <span style="color:red">false</span>
+  - `Pass` <span style="color:red">false</span>
+  - `pass123123` <span style="color:red">false</span>
