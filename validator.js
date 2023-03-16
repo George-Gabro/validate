@@ -9,16 +9,26 @@ let validator = new Object()
  * @param {*} input 
  * @returns 
  */
-validator.validateEmailList = (input) => {
+validator.emailList = (input) => {
     const regex = /^([\w\.\-\+]+@([\w\-]+\.)+[\w\-]+(?:,\s*)?)+$/
 
     return regex.test(input)
 }
 
-validator.validateEmail = (input) => {
+validator.email = (input) => {
     const regex = /^([\w\.\-\+]+@([\w\-]+\.)+[\w\-]+(?:)?)+$/
 
     return regex.test(input)
+}
+
+validator.password = (input) => {
+    if(input.length < 8) return false
+
+    if(!/[A-Z]/.test(input)) return false
+    
+    if(!/[0-9]/.test(input)) return false
+
+    return true
 }
 
 export default validator;

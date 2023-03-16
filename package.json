@@ -1,5 +1,5 @@
 {
-  "name": "@spookyhub/validator",
+  "name": "@spookyhub/validate",
   "version": "1.0.0",
   "type": "module",
   "description": "A javascript module to validate different types of input",
@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spookyhub/Validator.git"
+    "url": "git+https://github.com/spookyhub/validate.git"
   },
   "author": "spookyhub",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/spookyhub/Validator/issues"
+    "url": "https://github.com/spookyhub/validate/issues"
   },
-  "homepage": "https://github.com/spookyhub/Validator#readme"
+  "homepage": "https://github.com/spookyhub/validate#readme"
 }
