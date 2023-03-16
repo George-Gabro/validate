@@ -1,4 +1,4 @@
-let validator = new Object()
+let validate = new Object()
 
 /**
  * [\w\.\-\+]+ matches one or more word characters, dots, hyphens, or plus signs 
@@ -9,19 +9,19 @@ let validator = new Object()
  * @param {*} input 
  * @returns 
  */
-validator.emailList = (input) => {
+validate.emailList = (input) => {
     const regex = /^([\w\.\-\+]+@([\w\-]+\.)+[\w\-]+(?:,\s*)?)+$/
 
     return regex.test(input)
 }
 
-validator.email = (input) => {
+validate.email = (input) => {
     const regex = /^([\w\.\-\+]+@([\w\-]+\.)+[\w\-]+(?:)?)+$/
 
     return regex.test(input)
 }
 
-validator.password = (input) => {
+validate.password = (input) => {
     if(input.length < 8) return false
 
     if(!/[A-Z]/.test(input)) return false
@@ -31,8 +31,8 @@ validator.password = (input) => {
     return true
 }
 
-validator.username = (input) => {
+validate.username = (input) => {
     return /^[a-z0-9_.]+$/.test(input)
 }
 
-export default validator;
+export default validate;
