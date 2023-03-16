@@ -31,4 +31,8 @@ validator.password = (input) => {
     return true
 }
 
+validator.username = (input) => {
+    return /^[a-z0-9_.]+$/.test(input)
+}
+
 export default validator;
