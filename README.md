@@ -23,3 +23,8 @@ to install this module visit the npm page of [@spookyhub/validate](https://www.n
   - `pass` <span style="color:red">false</span>
   - `Pass` <span style="color:red">false</span>
   - `pass123123` <span style="color:red">false</span>
+- `validate.username(input)` to validate a username, username can contain numbers, letters, points and "-"
+  - `username` true
+  - `username123` true
+  - `username.123_` true
+  - `username%*#@^!#*` false
