@@ -1,6 +1,6 @@
 {
   "name": "@spookyhub/validate",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "type": "module",
   "description": "A javascript module to validate different types of input",
   "main": "validator.js",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/spookyhub/validate/issues"
   },
-  "homepage": "https://github.com/spookyhub/validate#readme"
+  "homepage": "https://github.com/spookyhub/validate#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/spookyhub"
+  }
 }
