@@ -35,4 +35,10 @@ validate.username = (input) => {
     return /^[a-z0-9_.]+$/.test(input)
 }
 
+validate.youtubeVideoUrl = (input) => {
+    const regex = /^https?:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([\w-]{11})(?:\S+)?$/
+
+    return regex.test(input);
+}
+
 export default validate;
