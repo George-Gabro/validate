@@ -28,3 +28,4 @@ to install this module visit the npm page of [@spookyhub/validate](https://www.n
   - `username123` true
   - `username.123_` true
   - `username%*#@^!#*` false
+- `validate.youtubeVideoUrl` to validate if a given url is a youtube video link
